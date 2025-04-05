@@ -20,7 +20,15 @@ import studybuddy.common.Utils;
 import studybuddy.data.course.Course;
 
 public class Ui {
-    private final Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
+
+    public Ui() {
+        this.scanner = new Scanner(System.in);
+    }
+
+    public Ui(Scanner scanner) {
+        this.scanner = scanner;
+    }
 
     public String showCourseReplacedMessage(String oldCode, String newCode) {
         return "Course \"" + oldCode + "\" has been successfully replaced with \"" + newCode + "\".";
@@ -119,12 +127,31 @@ public class Ui {
     }
 
     /**
-     * Reads the input and parses it into a String array.
+     * Checks through conditions to make sure there is next line from scanner, and next line is not null.
+     * This method should be called when ever using scanner.nextLine() to read an input, to prevent
+     * crashing from Ctrl+Z input.
+     *
+     * @return The String from next line input of scanner.
+     */
+    public String robustNextLine() {
+        if (!scanner.hasNextLine()) {
+            System.out.println("Input stream is closed. CEGStudyBuddy has to exit, sorry!");
+            System.exit(0);
+        }
+        String str = scanner.nextLine();
+        if (str == null) {
+            System.out.println("Null input is detected. CEGStudyBuddy has to exit, sorry!");
+            System.exit(0);
+        }
+        return str.trim();
+    }
+
+    /**
+     * Reads the input and parses it into a String array. Make sure there is a next line before calling.
      *
      * @return The String array containing the command and parameters.
      */
     public String[] readInput() {
-        System.out.print("Enter command: ");
         String userInput = scanner.nextLine().trim();
         return userInput.split(" ", 2);
     }
@@ -176,6 +203,9 @@ public class Ui {
     public void showError(String error) {
         System.out.println(error);
     }
+    public void showEnterCommand() {
+        System.out.print("Enter command: ");
+    }
 
     public void showSaveMessage(String message) {
         System.out.println(message);
@@ -183,7 +213,7 @@ public class Ui {
 
     public String newPlanInput() {
         System.out.print("Please enter a plan name \nNo special characters are allowed, only alphanumeric input: ");
-        return scanner.nextLine().trim();
+        return robustNextLine();
     }
 
     /**
@@ -211,7 +241,7 @@ public class Ui {
             System.out.println((i + 1) + ". " + plans[i]);
         }
         System.out.print("Please enter a plan number between 1 and " + plans.length + " or 0 to create a new plan: ");
-        return scanner.nextLine().trim();
+        return robustNextLine();
     }
 
     public void planSuccessfullyLoadedMessage() {
@@ -232,7 +262,7 @@ public class Ui {
             System.out.println((i + 1) + ". " + plans[i]);
         }
         System.out.print("Please enter a plan number between 1 and " + plans.length + " : ");
-        return scanner.nextLine().trim();
+        return robustNextLine();
     }
 
     /**

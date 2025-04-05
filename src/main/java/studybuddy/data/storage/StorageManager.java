@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Scanner;
 
 import studybuddy.CEGStudyBuddy;
 import studybuddy.data.exception.CEGStudyBuddyException;
@@ -21,9 +22,9 @@ public class StorageManager {
      *
      * @param directory The directory path where plans will be stored.
      */
-    public StorageManager(String directory) {
+    public StorageManager(String directory, Scanner scanner) {
         this.directory = directory;
-        this.ui = new Ui();
+        this.ui = new Ui(scanner);
     }
 
     /**
