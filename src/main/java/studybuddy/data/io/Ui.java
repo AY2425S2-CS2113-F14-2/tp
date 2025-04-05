@@ -125,7 +125,7 @@ public class Ui {
      */
     public String[] readInput() {
         System.out.print("Enter command: ");
-        String userInput = scanner.nextLine().trim();
+        String userInput = scanner.nextLine().trim() + " ";
         return userInput.split(" ", 2);
     }
 
