@@ -258,10 +258,10 @@ public class Ui {
     }
 
     /**
-     * Method to help user choose a plan or choose creating a new one
+     * Method to help user choose a plan or choose creating a new one.
      *
-     * @param plans list of string of plan names
-     * @return
+     * @param plans A list of strings of plan names.
+     * @return The user input.
      */
     public String chooseOrCreateNewPlans(String[] plans) {
         for (int i = 0; i < plans.length; i++) {
@@ -272,7 +272,7 @@ public class Ui {
     }
 
     public void planSuccessfullyLoadedMessage() {
-        System.out.println("Plan loaded successfully.");
+        System.out.print("Plan loaded successfully.");
     }
 
     public void printCourse(Course c) {
@@ -280,10 +280,10 @@ public class Ui {
     }
 
     /**
-     * Method to allow user to choose a plan to delete
+     * Method to allow user to choose a plan to delete.
      *
-     * @param plans list of string of plan names
-     * @return
+     * @param plans The list of strings of plan names.
+     * @return The user input.
      */
     public String chooseDeletePlan(String[] plans) {
         for (int i = 0; i < plans.length; i++) {
@@ -333,7 +333,7 @@ public class Ui {
     }
 
     public String missingInputErrorMessage() {
-        return "Input is incomplete and information is missing, please check your input.";
+        return "Input is incomplete and information is missing. Please check your input.";
     }
 
     /**
@@ -362,14 +362,21 @@ public class Ui {
     }
 
     public void renameSuccessfulMessage() {
-        System.out.println("Successfully renamed.");
+        System.out.print("Successfully renamed.");
     }
 
     public String extraInputErrorMessage() {
-        return "There is extra input, please check your input";
+        return "There is extra input. Please check your input";
     }
 
     public String replaceDuplicateMessage() {
-        return "The same course already exists :)";
+        return "The same course already exists in your plan :)";
+    }
+
+    /**
+     * Prints the line separator.
+     */
+    public void printLine() {
+        System.out.println("________________________________________________________________________________");
     }
 }

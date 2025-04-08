@@ -11,7 +11,9 @@ import java.util.Arrays;
 public class Course implements Serializable {
     public static final int DUMMYSIZE = 20;
     public static final String DUMMYWORD = "DUM";
+    protected static final String DUMMYTITLE = "To be confirmed";
     protected static boolean[] dummies = new boolean[20];
+    
     protected String code;
     protected String title;
     protected int mc;
@@ -20,7 +22,6 @@ public class Course implements Serializable {
     // Editable to user
     protected int takeInSem;
     protected int takeInYear;
-    protected final String DUMMYTITLE = "To be confirmed";
 
     static {
         // false means this number is not used currently

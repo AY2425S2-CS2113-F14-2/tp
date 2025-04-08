@@ -9,6 +9,7 @@ This application is optimised for a **Command Line Interface (CLI)**.
 If you are a fast typer, you can plan and track your courses faster than NUSMods and boost you CLI skills at the same time!
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Quick Start
 
@@ -29,8 +30,9 @@ If you are a fast typer, you can plan and track your courses faster than NUSMods
    - On **Mac/Linux**: Use `cd` to navigate to the folder in Terminal.
 
 5. Run the application:
-   ```
+```
 java -jar cegstudybuddy.jar
+```
 
 
 6. Start typing commands and hit `Enter`.
@@ -38,6 +40,7 @@ java -jar cegstudybuddy.jar
 Refer to the **Features** section below for all available commands.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Features
 
@@ -447,7 +450,7 @@ delete_plan
 ---
 
 ### Rename Plan: `rename_plan`
-Allows you to rename the currently accessed plan
+Allows you to rename the current plan.
 
 **Format:**
 ```
@@ -491,8 +494,9 @@ This is only recommended for advanced users. All data is stored in the PlanData 
 
 At the same time, it is advised to take caution while changing data manually.
 
-
 ---
+<div style="page-break-after: always;"></div>
+
 ## Command Summary
 
 | **Action**           | **Format**                                                                                                                                    |
@@ -518,6 +522,8 @@ At the same time, it is advised to take caution while changing data manually.
 | **Undo**             | `undo`                                                                                                                                        |
 | **Exit**             | `exit`                                                                                                                                        |
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## FAQ
 

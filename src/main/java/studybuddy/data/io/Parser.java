@@ -206,7 +206,7 @@ public class Parser {
                     add c/CODE t/TITLE mc/VALUE y/YEAR s/SEM""");
         }
 
-        String code = matcher.group("code").trim();
+        String code = matcher.group("code").trim().toUpperCase();
         String title = matcher.group("title").trim();
         String mcStr = matcher.group("mc").trim();
         String yearStr = matcher.group("year").trim();
@@ -256,7 +256,7 @@ public class Parser {
             return null;
         }
 
-        String code = predefinedCourseMatcher.group("code").trim();
+        String code = predefinedCourseMatcher.group("code").trim().toUpperCase();
         String yearStr = predefinedCourseMatcher.group("year").trim();
         String semStr = predefinedCourseMatcher.group("sem").trim();
 
