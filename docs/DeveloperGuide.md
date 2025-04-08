@@ -13,6 +13,8 @@ This project builds upon the work of:
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ## Setting Up & Getting Started
 
 First, fork the repo, and clone the fork into your computer.
@@ -28,6 +30,7 @@ Run the tests to ensure they all pass.
 
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Design
 
@@ -269,6 +272,7 @@ This design adheres to the Command Pattern, treating each operation as an object
 The `studybuddy.data.exception` package contains the CEGStudyBuddyException class. It handles exceptions that are special to CEGStudyBuddy and cannot be categorised by the exception classes in Java’s own packages, e.g. having no saved course plan at all, having a semester number greater than 2, etc. It is also used to print out a customised error message on screen.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Implementation
 
@@ -517,6 +521,7 @@ The `deletePlan(String planName)` method is responsible for deleting a specified
    - If the deleted plan was the currently loaded plan, it calls `initializePlan()` to prompt the user to select or create a new plan.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Appendix A: Product Scope
 
@@ -537,6 +542,7 @@ It is optimized for typing-focused power users and automatically tracks MCs, gra
 It is **cross-platform** and **free**.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Appendix B: User Stories
 
@@ -562,6 +568,7 @@ It is **cross-platform** and **free**.
 - As a CEG student, I want to search for a course by its course code or name so I can quickly find relevant details about it.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Appendix C: Non-functional Requirements
 
@@ -586,6 +593,7 @@ It is **cross-platform** and **free**.
 | Graduation Checker | Validates whether graduation requirements (160 MCs) are met |
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Appendix E: Instructions for Manual Testing
 

@@ -494,8 +494,9 @@ This is only recommended for advanced users. All data is stored in the PlanData 
 
 At the same time, it is advised to take caution while changing data manually.
 
-
 ---
+<div style="page-break-after: always;"></div>
+
 ## Command Summary
 
 | **Action**           | **Format**                                                                                                                                    |
@@ -521,6 +522,8 @@ At the same time, it is advised to take caution while changing data manually.
 | **Undo**             | `undo`                                                                                                                                        |
 | **Exit**             | `exit`                                                                                                                                        |
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## FAQ
 
