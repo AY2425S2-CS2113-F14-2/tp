@@ -614,6 +614,13 @@ add c/CS2040 t/Data Structures mc/4 y/2 s/1
 - Negative MCs (e.g., `mc/-4`)
 - Using letters in year or semester fields
 
+### Adding a Defined Course
+
+Command:
+```
+add c/CS2113 y/2 s/2
+```
+
 ---
 
 ### Deleting a Course
@@ -671,15 +678,40 @@ find c/CS2040
 
 ---
 
-### Viewing Workload
+### Viewing Workload Summary
 
 Command:
 ```
-workload
+workload_summary
 ```
 
 **Test Cases:**
-- After adding 6+ courses, check that MCs are grouped by semester correctly
+- Check response with 160 MCs in total, less than 160 MCs, and more than 160 MCs
+
+---
+
+### Viewing Workload for Semester
+
+Command:
+```
+workload_for y/1 s/1
+```
+
+**Test Cases:**
+- Check response with 20 MCs, less than 18 MCs, and more than 27 MCs
+
+---
+
+### Viewing Workload balance
+
+Command:
+```
+workload_balance
+```
+
+**Test Cases:**
+- Check response with all semesters having similar number of MCs
+- Check response when the difference in MCs between 2 semesters is large (more than 8)
 
 ---
 
@@ -708,17 +740,20 @@ dummy mc/4 y/2 s/1
 - Fail to add a dummy after dummy number reaches 20
 - Valid case: Adding a new dummy course with correct parameters (e.g., `dummy mc/4 y/2 s/1`)
 
+---
 
 ### Pre-requisite Checker
 
 Command:
 ```
-prereq c/CODE
+prereq c/CS2113
 ```
 **Test Cases:**
 - Invalid Course input format like (C9999, CSERT etc.)
 - Input without any course
 - Input without c/ 
+
+---
 
 ### Replacing a Course
 
@@ -733,6 +768,8 @@ replace c/OLD CODE c/NEW CODE t/Title mc/Modular Credits y/Year s/Semester
 - Input with a decimal or floating parameter for year, sem and mc
 - Input with an invalid course format like CS999 etc.
 
+---
+
 ### Summary Command
 
 Command:
@@ -742,6 +779,8 @@ summary
 
 **Test Cases:**
 - Run a set of both valid and error commands and execute "summary"
+
+---
 
 ### Undo Command
 
@@ -754,4 +793,67 @@ undo
 - Execute the operations like (ADD, DELETE, EDIT, REPLACE)
 - Run the "undo" command
 - The undo command only works for the operations (ADD, DELETE, EDIT, REPLACE)
+
+---
+
+### Save Plan Command
+
+Command:
+```
+save
+```
+
+---
+
+### Switch Plan Command
+
+Command:
+```
+switch_plan
+```
+
+**Test Cases:**
+- Try switching to plans that do not exist
+
+---
+
+### Rename Plan Command
+
+Command:
+```
+rename_plan
+```
+
+---
+
+### Delete Plan Command
+
+Command:
+```
+delete_plan
+```
+
+**Test Cases:**
+- Try deleting a plan that does not exist
+
+---
+
+### Help Command
+
+Command:
+```
+help
+```
+
+**Test Cases:**
+- Check if all commands' help messages are shown
+
+---
+
+### Exit Command
+
+Command:
+```
+exit
+```
 

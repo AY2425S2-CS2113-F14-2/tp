@@ -40,3 +40,9 @@ Below are my contributions to the project.
 - Helped include an example for some commands in the command_summary
 
 ---
+
+## Developer Guide Documentation
+
+- Contributed to Instructions for Manual Testing for most commands
+
+---
