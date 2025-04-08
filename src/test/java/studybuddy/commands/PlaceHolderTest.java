@@ -22,7 +22,7 @@ public class PlaceHolderTest {
     public void testValidCommand() {
         String input = "dummy mc/6 y/2 s/2";
         PlaceHolderCommand command = new PlaceHolderCommand(input);
-        String expected = "There is extra input, please check your input";
+        String expected = "There is extra input. Please check your input";
         assertEquals(expected, execute(command));
     }
 
@@ -30,7 +30,7 @@ public class PlaceHolderTest {
     public void testDummyCommand1() {
         String input = "dummy mc/6 y/2 s/2";
         PlaceHolderCommand command = new PlaceHolderCommand(input);
-        String expected = "There is extra input, please check your input";
+        String expected = "There is extra input. Please check your input";
         assertEquals(expected, execute(command));
     }
 
@@ -38,7 +38,7 @@ public class PlaceHolderTest {
     public void testDummyCommand2() {
         String input = "dummy mc/6 y/2 s/2";
         PlaceHolderCommand command = new PlaceHolderCommand(input);
-        String expected = "There is extra input, please check your input";
+        String expected = "There is extra input. Please check your input";
         assertEquals(expected, execute(command));
     }
 
@@ -46,7 +46,7 @@ public class PlaceHolderTest {
     public void testDummyCommand3() {
         String input = "dummy mc/6 y/2 s/2";
         PlaceHolderCommand command = new PlaceHolderCommand(input);
-        String expected = "There is extra input, please check your input";
+        String expected = "There is extra input. Please check your input";
         assertEquals(expected, execute(command));
     }
 

@@ -20,7 +20,7 @@ public class Course implements Serializable {
     // Editable to user
     protected int takeInSem;
     protected int takeInYear;
-    protected final String DUMMYTITLE = "To be confirmed";
+    protected static final String DUMMYTITLE = "To be confirmed";
 
     static {
         // false means this number is not used currently
