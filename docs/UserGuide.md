@@ -469,7 +469,7 @@ exit
 ---
 
 ### Summary Command: `summary`
-Outputs the summary of all the commands executed both valid and error commands
+Outputs the summary of all the commands and input parameters executed both valid and error commands
 
 It does not take any parameters.
 
