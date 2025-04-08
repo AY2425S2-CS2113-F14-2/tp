@@ -17,19 +17,20 @@ Given below are my contributions to the project.
 - **Justification:** Critical for maintaining data integrity and enhancing user experience by providing robust and comprehensive data management capabilities that support complex and varied academic planning.
 - **Highlights:** Required extensive analysis of potential design alternatives and careful modularization. Significantly improved object-oriented design by decoupling UI-specific functions from the core storage logic, resulting in increased maintainability and ease of future enhancements. Implemented intuitive `toSaveFormat` methods that store data in human-readable formats within text files, facilitating manual editing and verification.
 - **Testing and Error Handling:** Developed and implemented comprehensive automated tests for all storage functionalities. This included robust error handling for edge cases, automatic directory creation, and informative error messages to guide users effectively.
-- **Documentation:** Created extensive documentation in both the User Guide (UG) and Developer Guide (DG). Provided step-by-step user instructions, frequently asked questions for manual data editing, troubleshooting advice, and detailed explanations of each method and component involved in the storage process.
+- **Documentation:** Created extensive documentation in both the User Guide and Developer Guide. Provided step-by-step user instructions, frequently asked questions for manual data editing and detailed explanations of each method and component involved in the storage process.
 - **Code contributed:** [StorageManager.java](https://github.com/AY2425S2-CS2113-F14-2/tp/blob/master/src/main/java/studybuddy/data/storage/StorageManager.java)
 
 ### New Feature: Workload_for Command
-- **What it does:** Allows users to obtain a detailed breakdown of courses and associated workloads for a specified semester.
-- **Justification:** Enhances course planning clarity, helping users make informed decisions.
+
+- **What it does:** Allows users to obtain a detailed breakdown of courses is the semester.
+- **Purpose:** Allows user to get an in depth view of a semesters workload and classes.
 - **Highlights:** Designed initial command parsing logic which was later optimized and integrated into the centralized Parser class.
-- **Documentation:** Added detailed instructions and implementation notes to both UG and DG.
+- **Documentation:** Added detailed instructions and implementation to both UG and DG.
 - **Code contributed:** [WorkloadForCommand.java](https://github.com/AY2425S2-CS2113-F14-2/tp/blob/master/src/main/java/studybuddy/commands/WorkloadForCommand.java)
 
 ### New Feature: Workload_balance Command
-- **What it does:** Provides students with recommendations to maintain consistent and balanced workloads across semesters based on practical advice from senior students.
-- **Justification:** Supports sustainable academic planning, preventing workload peaks and improving long-term student performance.
+- **What it does:** Provides students with recommendations to maintain a balanced workload across semesters based on practical advice from senior students.
+- **Purpose:** Support a balanced and stress free schedule across 4 years of university life.
 - **Documentation:** Included thorough documentation in UG and DG, detailing usage scenarios and implementation insights.
 - **Code contributed:** [WorkloadBalanceCommand.java](https://github.com/AY2425S2-CS2113-F14-2/tp/blob/master/src/main/java/studybuddy/commands/WorkloadBalanceCommand.java)
 
