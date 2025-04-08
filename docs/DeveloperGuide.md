@@ -540,25 +540,25 @@ It is **cross-platform** and **free**.
 
 ## Appendix B: User Stories
 
-### Tracking and Planning Courses
-
+### Adding Courses
 - As a CEG student, I want to add a course to my study plan so I can track my progress toward graduation.
+
+### Deleting Courses
 - As a CEG student, I want to remove a course from my study plan so I can update my roadmap if I change my mind.
-- As a CEG student, I want to list all the courses I have added so that I can have an overview of my academic plan.
 - As a CEG student, I want to delete courses I added by mistake so my plan remains accurate.
 
-### Optimizing Workload and Schedule
+### Tracking & Listing Courses
+- As a CEG student, I want to list all the courses I have added so that I can have an overview of my academic plan.
 
+### Optimizing Workload and Schedule
 - As a CEG student, I want to see my total workload in MCs per semester so that I can balance my workload and avoid overloading.
 - As a student living in Pasir Ris, I want to plan my modules around travel time so I minimize time lost commuting.
 
 ### Graduation Requirements
-
 - As a CEG student, I want to check which modules I still need to complete for graduation so that I can plan my semesters.
 - As a CEG student, I want to be warned if I add a course without prerequisites so I don’t enroll in courses I’m not eligible for.
 
 ### Keeping Students Organized & On Track
-
 - As a CEG student, I want to search for a course by its course code or name so I can quickly find relevant details about it.
 
 ---

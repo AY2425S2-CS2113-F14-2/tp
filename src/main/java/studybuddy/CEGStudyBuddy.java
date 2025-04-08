@@ -21,10 +21,12 @@ public class CEGStudyBuddy {
         ui.showWelcome();
         storage.initializePlan();
         Course.dummyInitialiseCheck(courses);
+        ui.printLine();
         ui.showEnterCommand();
 
         while (isRunning && scanner.hasNextLine()) {
             String[] userInput = ui.readInput();
+            ui.printLine();
             // full input line
             String fullCommand = String.join(" ", userInput).trim();
 
@@ -43,6 +45,7 @@ public class CEGStudyBuddy {
 
                 isRunning = c.isRunning();
                 if (isRunning) {
+                    ui.printLine();
                     ui.showEnterCommand();
                 }
 
@@ -51,6 +54,7 @@ public class CEGStudyBuddy {
                     CommandHistoryManager.record(fullCommand);
                 }
                 ui.showMessage(e.getMessage());
+                ui.printLine();
                 ui.showEnterCommand();
             }
         }

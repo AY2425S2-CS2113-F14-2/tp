@@ -447,7 +447,7 @@ delete_plan
 ---
 
 ### Rename Plan: `rename_plan`
-Allows you to rename the currently accessed plan
+Allows you to rename the current plan.
 
 **Format:**
 ```

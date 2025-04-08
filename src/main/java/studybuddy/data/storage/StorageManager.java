@@ -189,6 +189,7 @@ public class StorageManager {
      * If an error occurs, it prompts the user again.
      */
     public void initializePlan() {
+        ui.printLine();
         boolean initRun = true;
         while (initRun) {
             initRun = false;
@@ -262,21 +263,21 @@ public class StorageManager {
         } catch (Exception e) {
             throw new CEGStudyBuddyException("Invalid plan number.");
         }
-        if (planNo < 0 || planNo > plans.length) {
-            throw new CEGStudyBuddyException("Plan nnumber out of range");
+        if (planNo <= 0 || planNo > plans.length) {
+            throw new CEGStudyBuddyException("Plan number is out of range.");
         }
         try {
             this.deletePlan(plans[planNo - 1]);
         } catch (Exception e) {
-            throw new CEGStudyBuddyException("Error deleting plan");
+            throw new CEGStudyBuddyException("Error deleting plan.");
         }
     }
 
     /**
-     * This method delets the plan
+     * This method deletes the plan
      *
-     * @param planName
-     * @throws CEGStudyBuddyException
+     * @param planName The name of the plan to be deleted.
+     * @throws CEGStudyBuddyException If the plan does not exist.
      */
     public void deletePlan(String planName) throws CEGStudyBuddyException {
         // Get user confirmation to delete
@@ -304,7 +305,7 @@ public class StorageManager {
     /**
      * This function starts the input sequence to rename the current plan
      *
-     * @throws CEGStudyBuddyException
+     * @throws CEGStudyBuddyException If plan name is invalid or plan already exists.
      */
     public void renamePlan() throws CEGStudyBuddyException {
         String[] plans = this.listPlans();
@@ -323,11 +324,11 @@ public class StorageManager {
     }
 
     /**
-     * This function writes the data into the file
+     * This function writes the data into the file.
      *
-     * @param file File the data has to be stored in
-     * @param data data that has to be stored
-     * @throws CEGStudyBuddyException
+     * @param file File the data has to be stored in.
+     * @param data Data that has to be stored.
+     * @throws CEGStudyBuddyException If an error occurs while writing to file.
      */
     private void dumpToFile(File file, String data) throws CEGStudyBuddyException {
         try {
@@ -335,14 +336,14 @@ public class StorageManager {
             fw.write(data);
             fw.close();
         } catch (Exception e) {
-            throw new CEGStudyBuddyException("Error occured in saving to file.");
+            throw new CEGStudyBuddyException("Error occurred in saving to file.");
         }
     }
 
     /**
-     * Function to autosave
+     * Function to autosave.
      *
-     * @throws CEGStudyBuddyException
+     * @throws CEGStudyBuddyException If an error occurs while saving.
      */
     public void autoSave() throws CEGStudyBuddyException {
         File saveFile = new File(directory, CEGStudyBuddy.courses.getPlanName() + ".txt");
