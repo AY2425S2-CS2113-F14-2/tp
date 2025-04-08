@@ -9,6 +9,7 @@ This application is optimised for a **Command Line Interface (CLI)**.
 If you are a fast typer, you can plan and track your courses faster than NUSMods and boost you CLI skills at the same time!
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Quick Start
 
@@ -29,8 +30,9 @@ If you are a fast typer, you can plan and track your courses faster than NUSMods
    - On **Mac/Linux**: Use `cd` to navigate to the folder in Terminal.
 
 5. Run the application:
-   ```
+```
 java -jar cegstudybuddy.jar
+```
 
 
 6. Start typing commands and hit `Enter`.
@@ -38,6 +40,7 @@ java -jar cegstudybuddy.jar
 Refer to the **Features** section below for all available commands.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## Features
 
